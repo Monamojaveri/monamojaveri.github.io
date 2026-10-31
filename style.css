@@ -1,0 +1,72 @@
+/* تنظیمات کلی */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #EAE6DF; /* همون رنگ کرمی که دوست داشتی */
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* هدر (اسم و عنوان) */
+header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+/* متن بیانیه */
+.statement {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #333;
+}
+
+/* گالری عکس‌ها */
+.gallery {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 40px; /* فاصله بین عکس‌ها */
+}
+
+/* تنظیمات خود عکس‌ها */
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+/* فوتر (اطلاعات تماس) */
+footer {
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+    margin-top: 80px;
+}
+
+footer a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+}
