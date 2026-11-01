@@ -1,0 +1,52 @@
+{
+  "artworks": [
+    {
+      "id": "infinite-army",
+      "title": "Infinite Army",
+      "year": "2019",
+      "image": "work1.jpg"
+    },
+    {
+      "id": "impact",
+      "title": "Impact",
+      "year": "2016",
+      "image": "work 2.png"
+    },
+    {
+      "id": "pair",
+      "title": "Pair",
+      "year": "2017",
+      "image": "work3.png"
+    },
+    {
+      "id": "bug",
+      "title": "Bug",
+      "year": "2024",
+      "image": "work4.jpg"
+    },
+    {
+      "id": "tehran",
+      "title": "Tehran",
+      "year": "2018",
+      "image": "work5.png"
+    },
+    {
+      "id": "spinning-top",
+      "title": "Spinning Top",
+      "year": "2017",
+      "image": "work6.jpeg"
+    },
+    {
+      "id": "bird",
+      "title": "Bird",
+      "year": "2026",
+      "image": "work7.jpg"
+    },
+    {
+      "id": "lion",
+      "title": "Shir (Lion)",
+      "year": "2024",
+      "image": "work8.png"
+    }
+  ]
+}
