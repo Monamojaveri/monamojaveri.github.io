@@ -1,14 +1,15 @@
 /* تنظیمات کلی */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #EAE6DF; /* همون رنگ کرمی که دوست داشتی */
+    background-color: #EAE6DF;
     color: #222;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-/* هدر (اسم و عنوان) */
+/* هدر و منو */
 header {
     text-align: center;
     padding: 80px 20px 40px;
@@ -16,7 +17,7 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 10px;
     font-weight: 400;
 }
@@ -28,10 +29,49 @@ header p {
     color: #555;
 }
 
-/* متن بیانیه */
+nav.menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.3s ease;
+}
+
+nav.menu a:hover {
+    border-bottom: 1px solid #222;
+}
+
+/* بخش درباره من (About) */
+#about {
+    max-width: 800px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+#about .bio p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0;
+}
+
+/* بیانیه */
 .statement {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 60px auto;
     text-align: center;
     padding: 20px;
     font-size: 1.1rem;
@@ -42,31 +82,73 @@ header p {
 /* گالری عکس‌ها */
 .gallery {
     max-width: 900px;
-    margin: 60px auto;
+    margin: 40px auto;
     padding: 0 20px;
-    display: grid;
-    gap: 40px; /* فاصله بین عکس‌ها */
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
-/* تنظیمات خود عکس‌ها */
-.gallery img {
+.artwork {
+    text-align: center;
+}
+
+.artwork img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 2px;
 }
 
-/* فوتر (اطلاعات تماس) */
+.artwork h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* بخش CV */
+#cv {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+#cv h2 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+#cv h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* فوتر (Contact) */
 footer {
     text-align: center;
     padding: 80px 20px;
     font-size: 0.9rem;
     border-top: 1px solid #ccc;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 footer a {
     color: #222;
     text-decoration: none;
     border-bottom: 1px solid #222;
+}
+
+@media (max-width: 600px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
 }
